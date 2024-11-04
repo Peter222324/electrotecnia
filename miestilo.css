@@ -1,0 +1,28 @@
+.maincontainer {
+    display: grid;
+    grid-template-columns: auto 20% auto;
+        /* 1 fr significa una fracion */
+    grid-template-rows: auto auto auto;
+        /* aqui no va afuncionar fr mejor con pixeles */
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+.grid-item {
+    background-color: aquamarine;
+    border: 2px solid red;
+}
+.item-especial{
+    color: blueviolet;
+    grid-column-start:  1;
+    grid-column-end: 3; /*abarca de la columna 1 a la 2*/
+}
+
+.item-especial2{
+    color: rgb(125, 226, 43);
+    grid-row-start:  3;
+    grid-row-end: 5; /*abarca de la columna 1 a la 2*/
+}
+
+body {
+    background-color: beige;
+}

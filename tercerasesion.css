@@ -1,0 +1,44 @@
+p{
+    color: chocolate;
+    text-align: center;
+    font-size: 0.8cm;
+}
+.destacado {
+    color: blue;
+    font-family: Verdana, sans-serif;
+    padding: 10px;
+    border: 3px;
+    border-radius: 5%;
+}
+ /* Div centrado horizontalmente */
+.centered {
+    width: 50%;
+    /* Centrado horizontalmente */
+    margin: 2 auto;
+    background-color: rgb(92, 86, 68);
+}
+  /* Div en una posición específica usando porcentaje */
+.specific-percent {
+    width: 30%;
+    /* 20% desde la izquierda */
+    margin-left: 20%;
+    /* 30% desde la parte superior */
+    margin-top: 1%;
+    background-color: rgb(0, 255, 204);
+}
+/* Contenedor de la cuadrícula */
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;  /* cuatro columnas iguales */
+gap: 10px;
+padding: 10px;
+background-color: rgb(311, 311, 311);
+}
+
+/* Estilos de los elementos de la cuadrícula */
+.grid-item {
+background-color: rgb(193, 240, 128);
+padding: 20px;
+text-align: center;
+border: 1px solid black;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> 
+    <title>ELECTROTECNIA</title>
+        <link rel="icon" href="C:\Users\profesor\Pictures\Imagenes\Puerta_OR_EX_2ent_bis.png" type="image/x-icon">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <style>
+                p{
+                    color: rgb(5, 5, 95);
+                    text-align: left;
+                    font-size: 0.5cm;
+                }
+                .destacado {
+                    color: rgb(22, 22, 98);
+                    font-family: Verdana, sans-serif;
+                    padding: 10px;
+                    border: 3px;
+                    border-radius: 5%;
+                }  
+            </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+    <ul class="nav nav-tabs nav-fill">
+
+        <li class="nav-item">
+            <a title="Ir a inicio" class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+
+        <!-- Resistivos -->
+        <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                Resistencias
+                </a>
+                <ul title="Ir a circuitos Resistivos" class="dropdown-menu">
+                <li><a title="Ir a circuitos Resistivos Serie" class="dropdown-item" href="#CR Serie">Circuitos Resistivos en Serie</a></li>
+                <li><a title="Ir a circuitos Resistivos Paralelo"class="dropdown-item" href="#CR Paralelo">Circuitos Resistivos en Paralelo</a></li>
+                <li><a title="Ir a circuitos Resistivos Mixtos"class="dropdown-item" href="#CR mixtos">Circuitos Resistivos Mixtos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a title="Ir a Ejemplos" class="dropdown-item" href="#CR Ejemplos">Ejemplos</a></li>
+                </ul>
+            </li>     
+        </li>
+        
+        <!-- Condensadores -->
+        <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Condensadores
+                </a>
+                <ul class="dropdown-menu">
+                <li><a title="Ir a circuitos Capacitivos Serie" class="dropdown-item" href="#">Circuitos Capacitivos en Serie</a></li>
+                <li><a title="Ir a circuitos Capacitivos Paralelo" class="dropdown-item" href="#">Circuitos Capacitivos en Paralelo</a></li>
+                <li><a title="Ir a circuitos Capacitivos Mixtos"class="dropdown-item" href="#">Circuitos Capacitivos Mixtos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a title="Ir a Ejemplos " class="dropdown-item" href="#">Ejemplos</a></li>
+                </ul>
+            </li>     
+        </li>
+        
+        <!-- Circuitos RL inductivos -->
+        <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Circuitos RL
+                </a>
+                <ul class="dropdown-menu">
+                <li><a title="Ir a circuitos RL Serie"class="dropdown-item" href="#">Circuitos RL en Serie</a></li>
+                <li><a title="Ir a circuitos RL Paralelo"class="dropdown-item" href="#">Circuitos RL en Paralelo</a></li>
+                <li><a title="Ir a circuitos RL Mixtos"class="dropdown-item" href="#">Circuitos RL Mixtos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a title="Ir a Ejemplos" class="dropdown-item" href="#">Ejemplos</a></li>
+                </ul>
+            </li>
+        </li>
+        
+        <!-- Circuitos RC capacitivos -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Circuitos RC
+                </a>
+                <ul class="dropdown-menu">
+                <li><a title="Ir a circuitos RC Serie"class="dropdown-item" href="#">Circuitos RC en Serie</a></li>
+                <li><a title="Ir a circuitos RC Paralelo"class="dropdown-item" href="#">Circuitos RC en Paralelo</a></li>
+                <li><a title="Ir a circuitos RC Mixtos"class="dropdown-item" href="#">Circuitos RC Mixtos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a title="Ir a Ejemplos" class= "dropdown-item" href="#">Ejemplos</a></li>
+                </ul>
+        </li>
+    </ul>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    </nav>
+
+    <section id="inicio">
+        <h2 class="destacado">inicio</h2>
+        <a title="SI PINCHAS VAS A GOOGLE" href="htpps://www.google.com"> Pinchar para consultar</a>
+        <h1 title="Sí, estoy aprendiemndo html">hola</h1>  
+        <p> El objetivo de esta pagina es enseñar a los alumnos los principios basicos del analisis de circuitos resistivos.<br></p>
+        <p> Asi como los tipos basicos de circuitos y caracteristicas principales. <br><hr></p>                              
+    </section>
+
+    <section id="CR serie">
+        <h2 class="destacado">Circuitos asociados en serie</h2><hr>
+        <p>
+           <a> <img width="250" height="500"  src="4R-U1234-I1234serie.png" alt="Ojo en pixeles"> </a>
+        </p>
+        <p> La caracteristica principal de un circuito resistivo en serie es que, la Intensidad es igual en todos los receptores I1= I2= I3= I4= It<br></p>
+        <p> Mientras que la suma de las tensiones en los recptores es igual a la tension total. Ut= U1 + U2 + U3 + U4. <br><hr></p>
+    </section>
+
+    <section id="CR paralelo">
+        <h2 class="destacado"> Circuitos asociados en paralelo </h2><hr> 
+            <p>
+            <a> <img width="500" height="250" src="4R-U1234-I1234 paralelo.png" alt="Ojo en pixeles"> </a>
+            </p>
+            <!--tamaño de la imagen-->
+            <p> La caracteristica principal de un circuito resistivo en paralelo es que, la tension es igual en todos los receptores U1= U2= U3= U4= Ut<br></p>
+            <p> Mientras que la suma de las intesidades por los recptores es igual a la intensidad total. It= I1 + I2 + I3 + I4. <br><hr></p>
+    </section>
+
+    <section id="CR mixtos">
+        <h2 class="destacado">Circuitos mixtos</h2><hr>
+            <p>
+            <img width="500" height="250" src="5R-2S-3P-U12345-I12345mixto.png" alt="Ojo en pixeles">
+            </p>
+            <!--tamaño de la imagen-->
+            <p> Un circuito mixto ha de resolverse mediante circuitos equivalentes. Habra que ir resolviendo hasta llegar a Rt<br></p>
+            <p> Una vez resuelto habrá que ir calculando tensiones e intensidades en cada Receptor. <br><hr></p>
+    </section>
+
+    <section id="CR Ejemplos">
+        <h2 class="destacado">Ejemplos de Circuitos</h2><hr>
+            
+            <!--EJEMPLOS EN ACORDEON-->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h4 class="destacado">Ejemplo 1</h4>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">En el circuito de la figura calcula los siguientes parámetros: It, Rt, U1, U2, I1, I2, calcula el balance de potencias comprobando que la potencia entregada es igual a la consumida por los receptores.
+                        Datos:
+                        Ut: 50v
+                        R1: 2MΩ
+                        R2: 3MΩ
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h4 class="destacado">Ejemplo 2</h4>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">En el circuito de la figura calcula los siguientes parámetros: It, Rt, U1, U2, I1, I2, calcula el balance de potencias comprobando que la potencia entregada es igual a la consumida por los receptores.
+                        Datos:
+                        Ut: 50v
+                        R1: 2MΩ
+                        R2: 3MΩ
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h4 class="destacado">Ejemplo 3</h4>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        En el circuito de la figura calcula los siguientes parámetros: It, Rt, U1, U2, I1, I2, calcula el balance de potencias comprobando que la potencia entregada es igual a la consumida por los receptores.
+                        Datos:
+                        Ut: 50v
+                        R1: 2MΩ
+                        R2: 3MΩ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p> Este apartado aporta ejercicios variados para resolver. Habra que ir resolviendo hasta llegar a Rt<br></p>
+            <p> Una vez resuelto habrá que ir calculando tensiones e intensidades en cada Receptor. <br><hr></p>
+    </section>
+
+    <section id= "Transformadores">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="trafo_partes12.png" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="trafo_partes11.png" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="trafo_partes10.png" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="trafo_partes9.png" class="d-block w-10" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="btn-group" role="group" aria-label="Basic example"></div>
+        <ul class="nav nav-pills nav-fill" >
+        <!-- Esto sobra -->
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 todos los derechos reservados, copyright</p>
+        <!--es el pie de la pagina, como su nombre indica-->
+    </footer>
+    
+</body>
